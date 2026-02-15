@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head><link rel="stylesheet" href="addtocart.css"></head>
+<section id="cart-page">
+    <div class="container">
+        <div class="section-header">
+            <h2>Your Shopping Cart</h2>
+            <p>Review your selected courses and materials</p>
+        </div>
+
+        <div class="cart-container">
+            <div class="cart-items" id="cartItemsContainer">
+                <div class="empty-cart-msg">Your cart is empty.</div>
+            </div>
+
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">₹0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (18% GST)</span>
+                    <span id="cartTax">₹0</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="cartTotal">₹0</span>
+                </div>
+                <button onclick="checkout()" class="btn btn-primary btn-full" style="margin-top: 20px;">Proceed to Checkout</button>
+                <button onclick="showSection('shop')" class="btn btn-outline btn-full" style="margin-top: 10px;">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+</section>
+</html>
